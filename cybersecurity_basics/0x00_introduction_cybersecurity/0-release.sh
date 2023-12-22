@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $(uname)
+lsb_release -i -s
