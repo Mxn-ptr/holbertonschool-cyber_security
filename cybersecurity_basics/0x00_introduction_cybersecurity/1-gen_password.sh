@@ -1,2 +1,2 @@
 #!/bin/bash
-cat /dev/urandom | tr -cd '[:alnum:]' | head -c "$1"
+fold -w1 /dev/urandom | tr -dc '[:alnum:]' | head -n 10 -c "$1"
